@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+env/
+venv/
+.env
+
+# Database
+*.db
+*.sqlite3
+
+# Reports
+reports/
+*.html
+*.pdf
+*.txt
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Linux
+*.swp
+.DS_Store
+
+# Build
+dist/
+build/
+*.spec
+cve_cache/

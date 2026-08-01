@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "name": "BHISHMA Local CVE Intelligence Database",
+    "version": "1.0",
+    "mode": "strict-version-matching",
+    "note": "Detection only. CVEs are shown only when exact affected versions match."
+  },
+  "cves": [
+    {
+      "product": "apache",
+      "vendor": "Apache Software Foundation",
+      "service": "Apache HTTP Server",
+      "cve": "CVE-2021-41773",
+      "title": "Apache HTTP Server Path Traversal and File Disclosure",
+      "affected_versions": ["2.4.49"],
+      "fixed_versions": ["2.4.51"],
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "mitre": ["T1190"],
+      "kev": true,
+      "description": "Apache HTTP Server 2.4.49 may allow path traversal and file disclosure when misconfigured.",
+      "remediation": "Upgrade Apache HTTP Server to 2.4.51 or later and review access control configuration.",
+      "references": [
+        "https://httpd.apache.org/security/vulnerabilities_24.html"
+      ]
+    },
+    {
+      "product": "apache",
+      "vendor": "Apache Software Foundation",
+      "service": "Apache HTTP Server",
+      "cve": "CVE-2021-42013",
+      "title": "Apache HTTP Server Path Traversal and Possible Remote Code Execution",
+      "affected_versions": ["2.4.50"],
+      "fixed_versions": ["2.4.51"],
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "mitre": ["T1190"],
+      "kev": true,
+      "description": "Apache HTTP Server 2.4.50 may allow path traversal and possible remote code execution under specific configurations.",
+      "remediation": "Upgrade Apache immediately to 2.4.51 or later.",
+      "references": [
+        "https://httpd.apache.org/security/vulnerabilities_24.html"
+      ]
+    },
+    {
+      "product": "vsftpd",
+      "vendor": "vsftpd",
+      "service": "FTP Service",
+      "cve": "CVE-2011-2523",
+      "title": "Backdoored vsftpd Version",
+      "affected_versions": ["2.3.4"],
+      "fixed_versions": [],
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "mitre": ["T1190"],
+      "kev": false,
+      "description": "vsftpd 2.3.4 contains a known malicious backdoor.",
+      "remediation": "Remove this version and install a trusted patched package.",
+      "references": []
+    },
+    {
+      "product": "webmin",
+      "vendor": "Webmin",
+      "service": "Webmin",
+      "cve": "CVE-2019-15107",
+      "title": "Webmin Remote Command Execution",
+      "affected_versions": ["1.890"],
+      "fixed_versions": ["1.930"],
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "mitre": ["T1190"],
+      "kev": true,
+      "description": "Certain Webmin versions are affected by remote command execution through password change functionality.",
+      "remediation": "Upgrade Webmin to a patched version and restrict administrative access.",
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+# BHISHMA
+
+**BHISHMA — Evidence-Driven Security Assessment & Attack-Surface Intelligence Platform**
+
+BHISHMA is a modular penetration-testing assistance platform designed to help security analysts perform reconnaissance, service enumeration, web intelligence gathering, behavioral verification, attack-path correlation, and investigation-roadmap generation from a single interface.
+
+## Features
+
+* Reconnaissance engine
+* Service enumeration
+* Web application intelligence
+* Detection intelligence
+* Differential behavioral verification
+* Attack-path correlation
+* Prioritized investigation workflow
+* Professional HTML report generation
+
+## Architecture
+
+Target → Recon → Enumeration → Web Intelligence → Detection → Verification → Correlation → Roadmap → HTML Report
+
+## Requirements
+
+* Python 3.11+
+* Linux (Kali recommended)
+
+## Installation
+
+```bash
+git clone https://github.com/YOUR_USERNAME/BHISHMA_NEW.git
+cd BHISHMA_NEW
+chmod +x bhishma.sh
+./bhishma.sh
+```
+
+## Usage
+
+1. Launch BHISHMA:
+
+```bash
+./bhishma.sh
+```
+
+2. Enter the target IP address.
+3. Run the assessment.
+4. Generate the HTML report from the GUI.
+
+Generated reports are stored in the `reports/` directory.
+
+## Main Modules
+
+* `recon_engine.py`
+* `enum_engine.py`
+* `web_recon_engine.py`
+* `detection_engine.py`
+* `verification_engine.py`
+* `correlation_engine.py`
+* `roadmap_engine.py`
+* `report_engine.py`
+
+## Example Validation Target
+
+* **DC9** — Full end-to-end workflow validation
+
+## Disclaimer
+
+BHISHMA is intended for **authorized security assessment, penetration testing, and educational use only**. Automated findings must be manually validated before being treated as confirmed vulnerabilities.
